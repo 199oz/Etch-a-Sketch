@@ -1,6 +1,9 @@
 Etch-a-Sketch
 Welcome to the Etch-a-Sketch project! This is a simple web-based drawing application inspired by the classic Etch-a-Sketch toy. You can use your mouse or touch input to draw on the screen, just like the original toy!
 
+Live Demo 😎:
+https://199oz.github.io/Etch-a-Sketch/
+
 Features
 Simple Drawing Interface: Draw using your mouse or touch input.
 Clear Button: Easily erase your drawing and start fresh.
