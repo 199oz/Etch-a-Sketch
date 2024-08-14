@@ -11,12 +11,14 @@ function getRandomColor() {
 
 
 function displayConsole(number) {
+    container.style.gridTemplateColumns = `repeat(${number}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${number}, 1fr)`
+
     container.innerHTML = ""
     for (let i = 0; i < number; i++) {
         for (let j = 0; j < number; j++) {
             const square = document.createElement('div')
             square.addEventListener('mouseover',() => {square.style.backgroundColor = getRandomColor()})
-            square.classList.add('square')
             container.appendChild(square)
         }
         

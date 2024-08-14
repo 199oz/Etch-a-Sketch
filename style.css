@@ -1,26 +1,31 @@
-*{
-    margin: 0px;
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0; /* Optional: Reset padding for all elements as well */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    overflow: hidden;
 }
 
-
-.square{
-    height: 25px;
-    width: 25px;
-}
-
-
-.container{
+body {
     display: flex;
-    flex-flow: wrap;
-    width: 500px;
-    height: 500px;
-
-
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height to enable vertical centering */
+    position: relative; /* Allows absolute positioning of the button */
 }
 
+.container {
+    display: grid;
+    gap: 2px; /* Optional: Add space between squares */
+    width: 70%;
+}
 
-button{
+.container div {
+    width: 100%;
+    padding-top: 100%; /* This makes each square's height equal to its width */
+    background-color: lightgray;
+}
+
+button {
     width: 90px;
     height: 40px;
     border-radius: 10px;
@@ -29,11 +34,5 @@ button{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px;
     position: absolute;
-    top:0;
-}
-
-button:hover{
-    cursor: pointer;
-    opacity: .7;
-    transition: .4s;
+    top: 10px; /* Added spacing from the top */
 }
